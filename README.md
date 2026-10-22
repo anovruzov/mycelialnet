@@ -10,7 +10,18 @@ Open `index.html` in a browser, or serve the repository with any static web serv
 
 Publish the repository root using a static host. The entry point is `index.html`.
 
-Cloudflare Pages settings:
+Cloudflare Workers settings (recommended for the current dashboard):
+- Worker name: `mycelialnet`
+- Production branch: `main`
+- Root directory: `/`
+- Build command: leave blank
+- Deploy command: `npx wrangler deploy`
+
+`wrangler.jsonc` serves the root `index.html` directly. `.assetsignore` excludes all other repository files from the public asset upload.
+
+After deployment, add `myceliclabs.com` under Worker Settings > Domains & Routes > Add > Custom Domain.
+
+Cloudflare Pages settings (alternative):
 - Production branch: `main`
 - Framework preset: None
 - Build command: `exit 0`
