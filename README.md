@@ -1,23 +1,23 @@
 # Mycelic website
 
-Static website for Mycelic Labs. The site is contained in `index.html` and has no build step or external runtime dependencies.
+Static website for Mycelic Labs. The production static site is contained in `public/index.html` (mirrored from root `index.html`) and requires no build step or external runtime dependencies.
 
 ## Preview
 
-Open `index.html` in a browser, or serve the repository with any static web server.
+Open `public/index.html` in a browser, or serve the repository with any static web server.
 
 ## Deployment
 
 Publish the repository root using a static host. The entry point is `index.html`.
 
 Cloudflare Workers settings (recommended for the current dashboard):
-- Worker name: `mycelium`
+- Worker name: `proud-term-de72`
 - Production branch: `main`
 - Root directory: `/`
 - Build command: leave blank
 - Deploy command: `npx wrangler deploy`
 
-`wrangler.jsonc` serves the root `index.html` directly. `.assetsignore` excludes all other repository files from the public asset upload.
+`wrangler.jsonc` serves `public/index.html` from the dedicated `./public` assets directory with SPA fallback. The root `.assetsignore` is legacy and is not used by the production asset upload.
 
 After deployment, add `myceliclabs.com` under Worker Settings > Domains & Routes > Add > Custom Domain.
 
@@ -25,7 +25,7 @@ Cloudflare Pages settings (alternative):
 - Production branch: `main`
 - Framework preset: None
 - Build command: `exit 0`
-- Build output directory: `.`
+- Build output directory: `public`
 
 ## Website behavior
 
