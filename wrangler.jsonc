@@ -2,6 +2,7 @@
   "name": "proud-term-de72",
   "compatibility_date": "2026-10-22",
   "assets": {
-    "directory": "./"
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
   }
 }
