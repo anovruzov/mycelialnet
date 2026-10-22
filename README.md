@@ -11,7 +11,7 @@ Open `index.html` in a browser, or serve the repository with any static web serv
 Publish the repository root using a static host. The entry point is `index.html`.
 
 Cloudflare Workers settings (recommended for the current dashboard):
-- Worker name: `mycelialnet`
+- Worker name: `mycelium`
 - Production branch: `main`
 - Root directory: `/`
 - Build command: leave blank
