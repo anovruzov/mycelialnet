@@ -236,7 +236,7 @@ footer{min-height:68px;border-top:1px solid var(--line);display:flex;align-items
 .research-item h3{font:400 clamp(23px,3vw,37px)/1.15 Georgia,serif;letter-spacing:-.035em;margin:0 0 12px}
 .research-item p{font-size:13px;color:var(--sub);line-height:1.65;max-width:680px;margin:0}
 .research-item .research-request{margin-top:18px;min-height:28px}
-.research-item .date{color:var(--sub);font-size:11px}
+.research-item .date{color:var(--sub);font-size:11px}.research-disclosure{max-width:730px;margin-top:48px;border-top:1px solid var(--line);padding-top:26px}.research-disclosure p{font-size:14px;color:var(--sub);line-height:1.7;margin:12px 0 20px}
 .tag{font-size:10px;color:#858780;text-align:right}
 .contact-form{max-width:650px;margin-top:50px}
 .contact-draft{border-top:1px solid var(--line);margin-top:26px;padding-top:24px}
@@ -523,13 +523,47 @@ p{text-wrap:pretty}
     <section class="page" data-page="research">
       <div class="inner">
         <span class="eyebrow">02 / RESEARCH</span>
-        <h1>Evidence first.</h1>
-        <p class="lead">Four research tracks. One coordinated system.</p>
+        <h1>Beyond the<br>single model.</h1>
+        <p class="lead">We study what independent agents can achieve through persistent memory, verifiable evidence, and decentralized coordination.</p>
         <div class="research-list">
-          <article class="research-item"><div class="date">MEMORY</div><div><h3>88% LoCoMo retrieval.</h3><p>NeuralGraph achieved 87.9% evidence@15 on 66 questions from one LoCoMo conversation in our internal evaluation.</p><a class="inline-link research-request" href="#contact" data-contact-subject="Mycelic Memory benchmark details" aria-label="Request Memory benchmark details">Request details ↗</a></div><div class="tag">INTERNAL BENCHMARK</div></article>
-          <article class="research-item"><div class="date">SECURITY</div><div><h3>Connect the warning signs.</h3><p>Investigating how signals across devices and time reveal coordinated agent attacks, prompt injection, and memory poisoning.</p></div><div class="tag">ONGOING RESEARCH</div></article>
-          <article class="research-item"><div class="date">DISCOVERY</div><div><h3>71.3% discovery recall.</h3><p>EMERGENCE v4 across 10,000 simulated users and 15 evaluation seeds. Pooled recall across 30 seeds: 70.3%. Platform development continues.</p><a class="inline-link research-request" href="#contact" data-contact-subject="Mycelic EMERGENCE benchmark details" aria-label="Request EMERGENCE benchmark details">Request details ↗</a></div><div class="tag">INTERNAL SIMULATION</div></article>
-          <article class="research-item"><div class="date">LINEAGE</div><div><h3>77.8% capability survival.</h3><p>Lineage-aware repair versus 66.7% for full replication, using 55% of its serialized transfer volume. Five-node deterministic simulation, 30 seeds, nine failure conditions.</p><a class="inline-link research-request" href="#contact" data-contact-subject="Mycelic Lineage survivability benchmark details" aria-label="Request Lineage survivability benchmark details">Request details ↗</a></div><div class="tag">REPRODUCIBLE SIMULATION</div></article>
+          <article class="research-item">
+            <div class="date">MEMORY</div>
+            <div>
+              <h3>Memory that evolves.</h3>
+              <p>NeuralGraph builds source-linked, temporal memory for long-running agents: entities, relationships, decisions, and changes that remain traceable over time.</p>
+              <a class="inline-link research-request" href="https://github.com/anovruzov/NeuralGraph" target="_blank" rel="noopener">Explore NeuralGraph ↗</a>
+            </div>
+            <div class="tag">OPEN SOURCE</div>
+          </article>
+          <article class="research-item">
+            <div class="date">DISCOVERY</div>
+            <div>
+              <h3>Find what no agent sees alone.</h3>
+              <p>EMERGENCE investigates how independent agents combine partial observations, question competing explanations, and surface findings backed by distinct sources.</p>
+            </div>
+            <div class="tag">INTERNAL RESEARCH</div>
+          </article>
+          <article class="research-item">
+            <div class="date">LINEAGE</div>
+            <div>
+              <h3>Intelligence that survives failure.</h3>
+              <p>We evaluate evidence continuity, lineage-aware recovery, and graceful degradation when distributed nodes fail, disconnect, or disagree.</p>
+            </div>
+            <div class="tag">INTERNAL EVALUATION</div>
+          </article>
+          <article class="research-item">
+            <div class="date">SECURITY</div>
+            <div>
+              <h3>Corroboration before response.</h3>
+              <p>Exploring how independent runtime, identity, and network observations can expose coordinated agent threats. Detection and enforcement integrations remain under development.</p>
+            </div>
+            <div class="tag">IN DEVELOPMENT</div>
+          </article>
+        </div>
+        <div class="research-disclosure">
+          <span class="section-label">RESEARCH ACCESS</span>
+          <p>Detailed benchmark results, evaluation protocols, and experimental artifacts remain confidential while validation continues. We discuss the research with prospective enterprise pilot partners and research collaborators.</p>
+          <a class="inline-link" href="#contact" data-contact-subject="Mycelic confidential research briefing">Request a research briefing ↗</a>
         </div>
       </div>
     </section>
